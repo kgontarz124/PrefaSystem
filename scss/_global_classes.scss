@@ -1,0 +1,72 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1040px;
+}
+
+.main-title {
+    font-size: $fontSize1;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 28px 0;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: $colorPrimary;
+}
+
+.check {
+    text-transform: uppercase;
+    color: $colorSecondary;
+    font-size: $fontSize3;
+    transition: 0.5s color;
+
+    &:hover {
+        color: $colorPrimary;
+    }
+}
+
+.align-to-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blue-block {
+    width: 100px;
+    height: 5px;
+    background: $colorSecondary;
+}
+
+.subtitle {
+    font-size: $fontSize3;
+    margin: 18px 0;
+    text-align: center;
+}
+
+.btn {
+    background: $colorSecondary;
+    color: $colorTertiary;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 30px;
+    font-size: $fontSize3;
+    text-transform: uppercase;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: 0.7s;
+    text-align: center;
+
+    &:hover {
+        background: $colorPrimary;
+        opacity: .9;
+    }
+}
+
+.opction-title {
+    font-weight: 600;
+    font-size: $fontSize2;
+    margin-top: 25px;
+}

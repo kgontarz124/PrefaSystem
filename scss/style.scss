@@ -1,0 +1,26 @@
+@import "partials/_reset.scss";
+@import "_grid.scss";
+@import "_variables.scss";
+@import "_global_classes.scss";
+@import "partials/_header.scss";
+@import "partials/_slider.scss";
+@import "partials/_product_options.scss";
+@import "partials/_realizations.scss";
+@import "partials/_footer.scss";
+@import "partials/_about_us.scss";
+@import "partials/_realizations_main.scss";
+@import "partials/_form.scss";
+
+
+html, body {
+    font-family: $fontPrimary;
+    font-size: 13px;
+    color: $colorPrimary;
+}
+
+@media screen and (max-width:750px) {
+    html, body {
+        font-size: 11px;
+    }
+
+}

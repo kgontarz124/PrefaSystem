@@ -1,0 +1,74 @@
+.realizations {
+    min-height: 600px;
+    background: $colorTertiary;
+}
+
+.box-with-realization {
+    height: 330px;
+    background: $colorQuinary;
+    position: relative;
+
+    &:hover .realization-image {
+        transform: scale(1.12);
+    }
+
+    .realization-image {
+        transition: 0.7s;
+    }
+
+    .img-holder {
+        max-width: 314.33px;
+        max-height: 204.27px;
+        overflow: hidden;
+    }
+
+    .realization-message {
+        height: 180px;
+        max-width: 90%;
+        background: rgba(249,249,249,0.7);
+        position: absolute;
+        bottom: 12px;
+        left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .realization-tittle {
+            font-weight: 600;
+            font-size: $fontSize3;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .realizactin-text {
+            text-align: center;
+            padding: 15px 10px 10px 10px;
+        }
+    }
+}
+
+//RWD
+@media screen and (max-width:880px) {
+    .box-with-realization .realization-message {
+        left: 10px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        [class*="col-"] {
+            width:314.33px;
+        }
+    }
+    .box-with-realization .realization-message {
+        left: 17px;
+    }
+    .realization-btn {
+        display: none;
+    }
+}
