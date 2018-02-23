@@ -42,7 +42,7 @@
 //RWD
 @media screen and (max-width:1060px) {
     .realization-row {
-        width: 98%;
+        padding: 0px 40px;
     }
 }
 @media screen and (max-width:800px) {
@@ -55,8 +55,6 @@
         }
     }
 }
-
-
 
 //single realization
 .whole-box-realization {

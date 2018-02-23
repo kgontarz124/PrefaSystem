@@ -2,48 +2,54 @@
     min-height: 600px;
     background: $colorTertiary;
 }
-
 .box-with-realization {
-    height: 330px;
+    height: 320px;
     background: $colorQuinary;
     position: relative;
-
     &:hover .realization-image {
         transform: scale(1.12);
     }
-
     .realization-image {
         transition: 0.7s;
     }
-
     .img-holder {
         max-width: 314.33px;
         max-height: 204.27px;
         overflow: hidden;
     }
-
     .realization-message {
-        height: 180px;
-        max-width: 90%;
+        height: 148px;
+        width: 90%;
         background: rgba(249,249,249,0.7);
         position: absolute;
         bottom: 12px;
         left: 15px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-
+        padding: 10px;
         .realization-tittle {
             font-weight: 600;
             font-size: $fontSize3;
             text-align: center;
             margin-bottom: 5px;
         }
-
         .realizactin-text {
             text-align: center;
-            padding: 15px 10px 10px 10px;
+            padding: 0 10px 10px 10px;
+        }
+        a {
+            text-decoration: none;
+            color: $colorPrimary;
+            font-weight: 500;
+            transition: 0.5s all;
+            text-transform: uppercase;
+            cursor: pointer;
+            &:hover {
+                color: $colorSecondary;
+                font-weight: bold;
+            }
         }
     }
 }
@@ -62,7 +68,9 @@
         align-items: center;
 
         [class*="col-"] {
-            width:314.33px;
+            max-width:314.33px;
+            display: flex;
+            justify-content: center;
         }
     }
     .box-with-realization .realization-message {

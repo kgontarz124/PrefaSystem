@@ -1,18 +1,19 @@
 .opction-content {
-    height: 400px;
+    height: 325px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .opction-text{
+    .opction-title {
+        font-weight: 600;
+        font-size: $fontSize3;
+        margin-top: 25px;
         text-align: center;
-        width: 300px;
-        padding: 17px 25px 22px 25px;
+        line-height: 30px;
     }
 }
 
 //RWD
 @media screen and (max-width:730px) {
-    .product-options .row .opction-content {height: 300px;}
+    .product-options .row .opction-content {height: 225px;}
 }

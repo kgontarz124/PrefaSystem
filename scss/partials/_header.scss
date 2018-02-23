@@ -109,6 +109,7 @@
         }
         [class*="icon-"] {
             color: $colorPrimary;
+            transition: 0.5s color;
             &:hover {
                 color: $colorSecondary;
             }
@@ -135,8 +136,8 @@
 	}
 
 	span {
-		width: 80%;
-		height: 6px;
+		width: 70%;
+		height: 4px;
 		border-radius: 4px;
 		background: $colorPrimary;
 		display: block;
@@ -160,7 +161,7 @@
 				transition: 0.5s 0.5s all;
 				content:'';
 				width: 100%;
-				height: 6px;
+				height: 4px;
 				border-radius: 4px;
 				background: $colorPrimary;
 				display: block;
@@ -198,7 +199,7 @@
         box-shadow: 0 1px 5px rgba(#000, 0.5);
         position: fixed;
         z-index: 1000;
-        transition: 0.5s ease-in-out all;
+        transition: 1s all;
         .main-header{
             height:45px;
             .main-logo {
@@ -276,6 +277,11 @@
         background: $colorSecondary;
         border-top: 0;
         box-shadow: none;
+    }
+}
+@media screen and (max-width:450px){
+    .side-header .main-header .main-logo img {
+        width: 120px;
     }
 }
 

@@ -18,8 +18,6 @@ $gutter : 15px;
 
 .row {
     margin-bottom:0;
-
-
     [class*="col-"] {
         float:none;
         width:100%;
@@ -30,8 +28,6 @@ $gutter : 15px;
 @media (min-width:700px) {
     .row {
         @include clearfix();
-
-
         [class*="col-"] {
             float: left;
             padding-left: $gutter;

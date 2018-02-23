@@ -34,7 +34,7 @@
     align-items: center;
 }
 
-.blue-block {
+.red-block {
     width: 100px;
     height: 5px;
     background: $colorSecondary;
@@ -65,8 +65,9 @@
     }
 }
 
-.opction-title {
-    font-weight: 600;
-    font-size: $fontSize2;
-    margin-top: 25px;
+.screen-reader-text {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }

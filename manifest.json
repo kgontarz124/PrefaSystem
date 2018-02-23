@@ -1,0 +1,9 @@
+{
+  "short_name": "Prefa System",
+  "name": "Prefa System",
+  "theme_color": "#EC6A5C",
+  "background_color": "#3E4348",
+  "display": "standalone",
+  "description": "Prefa System website.",
+  "orientation": "portrait"
+}
